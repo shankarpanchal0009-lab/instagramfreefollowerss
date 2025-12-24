@@ -1,60 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Instagram Followers</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>Instagram Growth Tips</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body{
-      font-family: Arial;
-      background:#fafafa;
-      text-align:center;
-      padding-top:60px;
-    }
-    .box{
-      background:#fff;
-      width:90%;
-      max-width:360px;
-      margin:auto;
-      padding:25px;
-      border-radius:10px;
-      box-shadow:0 0 10px #ddd;
-    }
-    input,button{
-      width:100%;
-      padding:12px;
-      margin-top:10px;
-      border-radius:5px;
-    }
-    input{border:1px solid #ccc;}
-    button{
-      background:#3897f0;
-      color:#fff;
-      border:none;
-      font-size:16px;
-    }
+    body{font-family:Arial;background:#f2f2f2;padding:20px}
+    .box{max-width:400px;margin:auto;background:#fff;padding:20px;border-radius:10px}
+    input,button{width:100%;padding:12px;margin-top:10px}
+    button{background:#000;color:#fff;border:none}
   </style>
 </head>
 <body>
 
 <div class="box">
-  <h2>Instagram Followers</h2>
-  <p>Enter your username</p>
-
-  <input id="user" placeholder="Instagram username">
-  <button onclick="go()">Get Followers</button>
-
-  <p style="font-size:12px;color:gray;margin-top:15px;">
-    Demo website – learning purpose only
-  </p>
+  <h2>Instagram Growth Helper</h2>
+  <input id="username" placeholder="Enter Instagram Username">
+  <button onclick="showTips()">Get Growth Tips</button>
+  <p id="output"></p>
 </div>
 
+<p style="text-align:center;font-size:12px;color:gray">
+  Disclaimer: This site is not affiliated with Instagram.  
+  We do not provide real followers or ask for passwords.
+</p>
+
 <script>
-function go(){
-  if(document.getElementById("user").value==""){
-    alert("Username required");
-  }else{
-    window.location.href="process.html";
-  }
+function showTips(){
+  let u = document.getElementById("username").value;
+  document.getElementById("output").innerHTML =
+    "Hello <b>"+u+"</b><br>• Post reels daily<br>• Use trending hashtags<br>• Stay consistent";
 }
 </script>
 
