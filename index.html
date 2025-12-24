@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Instagram Followers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body{
+      font-family: Arial;
+      background:#fafafa;
+      text-align:center;
+      padding-top:60px;
+    }
+    .box{
+      background:#fff;
+      width:90%;
+      max-width:360px;
+      margin:auto;
+      padding:25px;
+      border-radius:10px;
+      box-shadow:0 0 10px #ddd;
+    }
+    input,button{
+      width:100%;
+      padding:12px;
+      margin-top:10px;
+      border-radius:5px;
+    }
+    input{border:1px solid #ccc;}
+    button{
+      background:#3897f0;
+      color:#fff;
+      border:none;
+      font-size:16px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="box">
+  <h2>Instagram Followers</h2>
+  <p>Enter your username</p>
+
+  <input id="user" placeholder="Instagram username">
+  <button onclick="go()">Get Followers</button>
+
+  <p style="font-size:12px;color:gray;margin-top:15px;">
+    Demo website – learning purpose only
+  </p>
+</div>
+
+<script>
+function go(){
+  if(document.getElementById("user").value==""){
+    alert("Username required");
+  }else{
+    window.location.href="process.html";
+  }
+}
+</script>
+
+</body>
+</html>
